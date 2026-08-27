@@ -170,7 +170,7 @@ if st.session_state.phase == "start":
 
     rounds = st.number_input("How many rounds would you like to play?",
                               min_value=1, value=1, step=1)
-
+    
     if st.button("Start Game"):
         st.session_state.rounds = rounds
         st.session_state.rounds_completed = 0
@@ -233,6 +233,8 @@ elif st.session_state.phase == "word_input":
         typed = st.session_state.get("word_box", "").strip()
         word = typed if typed else None
         st.session_state.round_result = score_word(word or "", st.session_state.display)
+        st.session_State.score += st.session_state.round_result["round_score"]
+        st.session_state.rounds_completed += 1
         st.session_state.phase = "result"
         st.rerun()
     else:
@@ -262,8 +264,8 @@ elif st.session_state.phase == "result":
         for err in result["letter_errors"]:
             st.warning(err)
 
-    st.session_state.score += result["round_score"]
-    st.session_state.rounds_completed += 1
+    # st.session_state.score += result["round_score"]
+    # st.session_state.rounds_completed += 1
 
     st.write(f"Round score: {result['round_score']}")
     st.write(f"Total score: {st.session_state.score}")
