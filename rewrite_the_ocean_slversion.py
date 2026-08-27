@@ -11,7 +11,7 @@ INPUT_SECONDS = 15    # time allowed to type a word
 st.set_page_config(page_title="Rewrite The Ocean", page_icon="🪸")
 st.title("🪸 Rewrite The Ocean 🪸")
 st.header("Presented by Mutahhar Nazir")
-st.subheader("The Bush School")
+#st.subheader("The Bush School")
 
 st.image("https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExYmswYXJkbTVtdmU3cTZqb3ltMXZxbmd1czUyOW1hNDB2YXdxaWI3ayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l3diXKYoAiX6qY64M/giphy.gif")
 
