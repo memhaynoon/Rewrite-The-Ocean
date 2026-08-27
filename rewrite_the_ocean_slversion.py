@@ -5,7 +5,7 @@ import time
 import json
 import base64
 
-REVIEW_SECONDS = 5    # time to look at the letters before typing (matches original wait_time)
+REVIEW_SECONDS = 30    # time to look at the letters before typing
 INPUT_SECONDS = 15    # time allowed to type a word
 
 st.set_page_config(page_title="Rewrite The Ocean", page_icon="🪸")
