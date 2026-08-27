@@ -52,14 +52,13 @@ st.markdown(background_css, unsafe_allow_html=True)
 # ---------- Rules: shown at all times, on every phase ----------
 with st.sidebar:
     st.header("🪸 Rewrite The Ocean")
-    st.markdown("""
-    **Rules:**
-    - The total number of letters will be 9.
-    - You may choose between 3 and 5 vowels (the rest will be consonants).
-    - Your aim is to make the longest possible word.
-    - If the word you enter is related to the ocean, you get bonus points.
-    - The score is tripled if you make a word using all nine letters.
-    """)
+    
+    st.markdown("**Rules:**")
+    st.markdown("- The total number of letters will be 9.")
+    st.markdown("- You may choose between 3 and 5 vowels (the rest will be consonants).")
+    st.markdown("- Your aim is to make the longest possible word.")
+    st.markdown("- If the word you enter is related to the ocean, you get bonus points.")
+    st.markdown("- The score is tripled if you make a word using all nine letters.")
 
 
 # ---------- Load dictionary once per session ----------
