@@ -93,9 +93,9 @@ for key, value in defaults.items():
 
 def generate_letters(vowel_amount):
     consonant_amount = 9 - vowel_amount
-    vowels = ["a", "e", "i", "o", "u"]
-    consonants = ["b", "c", "d", "f", "g", "h", "j", "k", "l", "m", "n",
-                  "p", "q", "r", "s", "t", "v", "w", "x", "y", "z"]
+    vowels = ["e", "e", "e", "e", "e", "e", "e", "e", "e", "e", "e", "e", "a", "a", "a","a", "a", "a", "a", "a", "a", "i", "i", "i", "i", "i", "i", "i", "i", "i", "o", "o", "o", "o", "o", "o", "o", "o", "u", "u", "u", "u"]
+    consonants = [ "n", "n", "n", "n", "n", "n", "r", "r", "r", "r", "r", "r", "t", "t", "t", "t", "t", "t", "d", "d", "d", "d", "l", "l", "l", "l", "s", "s", "s", "s", "g", "g", "g", "b", "b", "c", "c", "f", "f", "h", "h", "m", "m", "p", "p", "v", "v", "w", "w", "y", "y", "k", "j", "x", "q", "z"
+]
 
     vowels_decided = [random.choice(vowels) for _ in range(5)]
     consonants_decided = [random.choice(consonants) for _ in range(6)]
