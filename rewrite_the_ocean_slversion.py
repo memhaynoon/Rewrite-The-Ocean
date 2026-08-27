@@ -196,7 +196,7 @@ elif st.session_state.phase == "vowel_input":
 
 # ==================== PHASE: review ====================
 elif st.session_state.phase == "review":
-    st.subheader("Memorize these letters:")
+    st.subheader("These are your letters:")
     st.markdown(f"## {'  '.join(st.session_state.display).upper()}")
 
     elapsed = time.time() - st.session_state.review_start
@@ -233,7 +233,7 @@ elif st.session_state.phase == "word_input":
         typed = st.session_state.get("word_box", "").strip()
         word = typed if typed else None
         st.session_state.round_result = score_word(word or "", st.session_state.display)
-        st.session_State.score += st.session_state.round_result["round_score"]
+        st.session_state.score += st.session_state.round_result["round_score"]
         st.session_state.rounds_completed += 1
         st.session_state.phase = "result"
         st.rerun()
