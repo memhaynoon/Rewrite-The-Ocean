@@ -54,12 +54,13 @@ with st.sidebar:
     st.header("🪸 Rewrite The Ocean")
     
     st.markdown("**Rules:**")
+    
     st.markdown("- The total number of letters will be 9.")
     st.markdown("- You may choose between 3 and 5 vowels (the rest will be consonants).")
     st.markdown("- Your aim is to make the longest possible word.")
     st.markdown("- If the word you enter is related to the ocean, you get bonus points.")
     st.markdown("- The score is tripled if you make a word using all nine letters.")
-
+    st.image("12apostles.jpg")
 
 # ---------- Load dictionary once per session ----------
 @st.cache_data
