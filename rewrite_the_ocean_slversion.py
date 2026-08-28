@@ -58,8 +58,9 @@ try:
     </audio>
     """
     st.markdown(audio_html, unsafe_allow_html=True)
-except FileNotFoundError:
-    pass
+except FileNotFoundError as e:
+    st.error(str(e))
+    #pass
 
 # ---------- Rules: shown at all times, on every phase ----------
 with st.sidebar:
