@@ -56,6 +56,15 @@ try:
     <audio autoplay loop>
         <source src="data:audio/mp3;base64,{audio_base64}" type="audio/mp3">
     </audio>
+    <script>
+    document.addEventListener('click', function startMusic() {{
+        var music = document.getElementById('bg-music');
+        if (music){{
+            music.play();
+        }};
+        document.removeEventListener('click', startMusic);
+    }});
+    </script>
     """
     st.markdown(audio_html, unsafe_allow_html=True)
 except FileNotFoundError as e:
