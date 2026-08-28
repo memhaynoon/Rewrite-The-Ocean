@@ -48,29 +48,6 @@ except FileNotFoundError:
 
 st.markdown(background_css, unsafe_allow_html=True)
 
-# ---------- Sound Effect: ocean sound ----------
-
-try:
-    audio_base64 = get_base64_file("oceanWavesCrashingShoreline.mp3")
-    audio_html = f"""
-    <audio autoplay loop>
-        <source src="data:audio/mp3;base64,{audio_base64}" type="audio/mp3">
-    </audio>
-    <script>
-    document.addEventListener('click', function startMusic() {{
-        var music = document.getElementById('bg-music');
-        if (music){{
-            music.play();
-        }};
-        document.removeEventListener('click', startMusic);
-    }});
-    </script>
-    """
-    st.markdown(audio_html, unsafe_allow_html=True)
-except FileNotFoundError as e:
-    st.error(str(e))
-    #pass
-
 # ---------- Rules: shown at all times, on every phase ----------
 with st.sidebar:
     st.header("🪸 Rewrite The Ocean")
