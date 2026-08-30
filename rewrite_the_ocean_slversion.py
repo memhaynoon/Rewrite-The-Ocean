@@ -15,6 +15,8 @@ st.header("Presented by Mutahhar Nazir")
 
 st.image("https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExYmswYXJkbTVtdmU3cTZqb3ltMXZxbmd1czUyOW1hNDB2YXdxaWI3ayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l3diXKYoAiX6qY64M/giphy.gif")
 
+st.image("Recording 2026-08-30 133440.gif")
+
 # ---------- Background: ocean-blue color + wallpaper.jpg ----------
 @st.cache_data
 def get_base64_file(path):
