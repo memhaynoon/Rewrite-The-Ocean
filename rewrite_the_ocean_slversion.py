@@ -16,13 +16,14 @@ st.header("Presented by Mutahhar Nazir")
 st.markdown(
     f"""
     <style>
-    .stApp{{
+    html,body, .stApp{
         background-image: url("https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExemZoMTV0MjVxbTcwZDI3OWt3bTl6NDFpaGprbmh0ejdxc3A1cGt4byZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/U4YeKochtpqC8I3PPr/giphy.gif");
-        backgroud-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-    }}
+        backgroud-size: cover !important; 
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        background-attachment: fixed !important;
+        height: 100%;
+    }
     </style>
     """,
     unsafe_allow_html= True
