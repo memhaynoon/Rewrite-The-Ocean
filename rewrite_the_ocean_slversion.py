@@ -13,22 +13,7 @@ st.title("🪸 Rewrite The Ocean 🪸")
 st.header("Presented by Mutahhar Nazir")
 #st.subheader("The Bush School")
 
-st.markdown(
-    """
-    <style>
-    html, body, .stApp{
-        background-image: url("https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExemZoMTV0MjVxbTcwZDI3OWt3bTl6NDFpaGprbmh0ejdxc3A1cGt4byZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/U4YeKochtpqC8I3PPr/giphy.gif");
-        backgroud-size: cover !important; 
-        background-position: center !important;
-        background-repeat: no-repeat !important;
-        background-attachment: fixed !important;
-        height: 100%;
-    }
-    </style>
-    """,
-    unsafe_allow_html= True
-)
-#st.image("https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExemZoMTV0MjVxbTcwZDI3OWt3bTl6NDFpaGprbmh0ejdxc3A1cGt4byZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/U4YeKochtpqC8I3PPr/giphy.gif")
+st.image("https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExemZoMTV0MjVxbTcwZDI3OWt3bTl6NDFpaGprbmh0ejdxc3A1cGt4byZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/U4YeKochtpqC8I3PPr/giphy.gif")
 
 # ---------- Background: ocean-blue color + wallpaper.jpg ----------
 @st.cache_data
