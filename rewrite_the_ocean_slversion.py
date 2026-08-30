@@ -188,11 +188,11 @@ elif st.session_state.phase == "vowel_input":
                                     min_value=3, max_value=5, value=3, step=1)
 
     
-    #if st.button("Generate Letters"):
-    st.session_state.display = generate_letters(vowel_amount)
-    st.session_state.phase = "review"
-    st.session_state.review_start = time.time()
-    st.rerun()
+    if st.button("Generate Letters"):
+        st.session_state.display = generate_letters(vowel_amount)
+        st.session_state.phase = "review"
+        st.session_state.review_start = time.time()
+        st.rerun()
 
 
 # ==================== PHASE: review ====================
