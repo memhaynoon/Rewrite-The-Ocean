@@ -13,7 +13,7 @@ st.title("🪸 Rewrite The Ocean 🪸")
 st.header("Presented by Mutahhar Nazir")
 #st.subheader("The Bush School")
 
-st.image("https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExZXljeDhzbjc5bDA0cnZsemFmemtsNDl4OWx3ZDEzZW8xZTk0d295aiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/06hl2RXlidhitDPctr/giphy.gif")
+st.image("https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExYmswYXJkbTVtdmU3cTZqb3ltMXZxbmd1czUyOW1hNDB2YXdxaWI3ayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l3diXKYoAiX6qY64M/giphy.gif")
 
 # ---------- Background: ocean-blue color + wallpaper.jpg ----------
 @st.cache_data
