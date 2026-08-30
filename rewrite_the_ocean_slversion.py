@@ -190,24 +190,10 @@ elif st.session_state.phase == "vowel_input":
     
     if st.button("Generate Letters"):
         st.session_state.display = generate_letters(vowel_amount)
-        st.session_state.phase = "no_button"
+        st.session_state.phase = "review"
         st.session_state.review_start = time.time()
         st.rerun()
 
-# ==================== PHASE: no_button ====================
-elif st.session_state.phase == "no_button":
-    st.subheader(f"Round {st.session_state.rounds_completed + 1} of {st.session_state.rounds}")
-    st.write(f"Score so far: {st.session_state.score}")
-
-    # vowel_amount = st.number_input("How many vowels do you want? (3-5)",
-    #                                 min_value=3, max_value=5, value=3, step=1)
-
-    
-    # if st.button("Generate Letters"):
-    #     st.session_state.display = generate_letters(vowel_amount)
-    st.session_state.phase = "review"
-    #     st.session_state.review_start = time.time()
-    st.rerun()
 
 # ==================== PHASE: review ====================
 elif st.session_state.phase == "review":
