@@ -102,7 +102,7 @@ def generate_letters(vowel_amount):
     consonants_used = consonants_decided[0:consonant_amount]
     # if "q" selected, provide "u" as one of the vowels
     if "q" in consonants_used:
-        vowels_decided = "u"
+        vowels_decided[0] = "u"
     
     display = [vowels_decided[0], consonants_decided[0]]
     display += vowels_decided[1:vowel_amount]
