@@ -99,6 +99,11 @@ def generate_letters(vowel_amount):
     vowels_decided = [random.choice(vowels) for _ in range(5)]
     consonants_decided = [random.choice(consonants) for _ in range(6)]
 
+    consonants_used = [consonants_decided[0]] + consonants_decided[1:consonant_amount]
+    # if "q" selected, provide "u" as one of the vowels
+    if "q" in consonants_used:
+        vowels_decided = "u"
+    
     display = [vowels_decided[0], consonants_decided[0]]
     display += vowels_decided[1:vowel_amount]
     display += consonants_decided[1:consonant_amount]
@@ -124,7 +129,7 @@ def score_word(word, display):
     ocean_related = False
     bonus_points = 0
     if definition:
-        for kw in ["ocean", "sea", "beach", "reef", "sailor"]:
+        for kw in ["ocean", "sea", "beach", "reef", "sailor", "fish"]:
             if kw in definition:
                 ocean_related = True
         if ocean_related:
