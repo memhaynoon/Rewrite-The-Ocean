@@ -93,12 +93,13 @@ for key, value in defaults.items():
 def generate_letters(vowel_amount):
     consonant_amount = 9 - vowel_amount
     vowels = ["e", "e", "e", "e", "e", "e", "e", "e", "e", "e", "e", "e", "a", "a", "a","a", "a", "a", "a", "a", "a", "i", "i", "i", "i", "i", "i", "i", "i", "i", "o", "o", "o", "o", "o", "o", "o", "o", "u", "u", "u", "u"]
-    consonants = ["q",]
+    consonants = [ "w", "y", "y", "k", "j", "x", "q", "z"
+]
 
     vowels_decided = [random.choice(vowels) for _ in range(5)]
     consonants_decided = [random.choice(consonants) for _ in range(6)]
 
-    consonants_used = consonants_decided[0:consonant_amount+1]
+    consonants_used = consonants_decided[0:consonant_amount]
     # if "q" selected, provide "u" as one of the vowels
     if "q" in consonants_used:
         vowels_decided = "u"
